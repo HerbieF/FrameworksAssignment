@@ -1,0 +1,108 @@
+app.get("/listOfCards", (req, res) =>{
+    res.json({"users": ["user1","user2","user3","user4"]})
+})
+
+
+cards.forEach(element => {
+    
+    app.get("/listOfCards", (req, res) =>{
+        res.json(element)
+    })
+});
+
+
+
+
+
+
+
+
+
+    const [backendData,setBackendData] = useState([{}])
+    useEffect(() => {
+        fetch("/listOfCards").then(
+          Response => Response.json()
+        ).then(data =>{
+            setBackendData(data)
+          }
+        )
+      },[])
+
+
+
+ {(typeof backendData.users === 'undefined') ? (
+            <p>Loading...</p>
+        ):(
+            backendData.users.map((user,i) => (
+                <p key={i}>{user}</p>
+            ))
+        )
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ChangeHidden()
+{
+  
+  if (document.getElementById("ans").hidden == false)
+  {
+    document.getElementById("ans").hidden = true
+  }
+  else
+  {
+    document.getElementById("ans").hidden = false
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const handlesubmit = (e) =>{
+      e.preventDefault();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
